@@ -15,7 +15,7 @@ resource "aws_iam_instance_profile" "EC2_Jenkins" {
   name = "AmazonEC2Jenkins"
   role = aws_iam_role.Amazon_EC2_Jenkins.id
 }
-
+/*
 resource "aws_iam_policy" "s3_access_policy" {
   name        = "ec2_s3_access_policy"
   description = "Policy to allow EC2 instance to access S3 bucket for backups"
@@ -43,3 +43,4 @@ resource "aws_iam_policy" "s3_access_policy" {
     ]
   })
 }
+*/
