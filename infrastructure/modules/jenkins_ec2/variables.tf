@@ -11,3 +11,6 @@ variable "amiid" {
 variable "region" {
 }
 
+variable "Jenkins_server_name" {
+}
+
