@@ -97,7 +97,7 @@ echo "$password"
 sudo reboot
 EOF
   tags = {
-    Name = "Jenkins-EC2"
+    Name = var.Jenkins_server_name
     Date = local.current_date
     Env  = var.env
   }
