@@ -1,4 +1,13 @@
 variable "env" {
-  default = "dev"
+  default = "prod"
+}
+
+variable "instancetype" {
+}
+
+variable "amiid" {
+}
+
+variable "region" {
 }
 
