@@ -33,7 +33,9 @@ resource "aws_lb_target_group" "Jenkins_target_group" {
     path                = "/" # Endpoint path for health check
     port                = "traffic-port"  # Port to perform health check
     protocol            = "HTTP" # Protocol for health check
-    matcher             = "403"
+      matcher {
+      http_code = "200,403"
+    }
   }
 depends_on = [aws_instance.my_ec2,aws_lb.Jenkins_Alb]
 }
