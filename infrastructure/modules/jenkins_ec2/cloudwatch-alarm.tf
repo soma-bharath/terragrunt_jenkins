@@ -13,7 +13,7 @@ resource "aws_cloudwatch_metric_alarm" "cpu_alarm" {
     InstanceId = aws_instance.my_ec2.id
   }
   tags = {
-    Name = "Jenkins-EC2"
+    Name = var.Jenkins_server_name
     Date = local.current_date
     Env  = var.env
   }
