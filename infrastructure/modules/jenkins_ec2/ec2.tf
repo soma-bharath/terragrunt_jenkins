@@ -87,6 +87,8 @@ sudo systemctl enable firewalld
 sleep 10
 sudo firewall-cmd --zone=public --add-port=8080/tcp --permanent
 sleep 10
+sudo firewall-cmd --runtime-to-permanent
+sudo firewall-cmd --reload
 sudo systemctl restart firewalld
 sudo hostnamectl set-hostname jenkins
 sleep 5
